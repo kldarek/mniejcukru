@@ -208,7 +208,10 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(0,0,0,.7);
+}
+span.czarny {
+  color: white;
+  background-color: black;
 }
 
 @media(min-width:768px) {
