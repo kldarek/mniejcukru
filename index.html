@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
   <meta charset="utf-8">
@@ -20,6 +19,124 @@
 
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="cookieconsent-1.2.3/build/cookieconsent.js"></script>
+  <script>
+      window.CookieConsent.init({
+        language: {
+          current: 'pl'
+        },
+        categories: {
+          necessary: {
+            needed: true,
+            wanted: true,
+            checked: true,
+            language: {
+              locale: {
+                pl: {
+                  name: 'Potrzebne ciasteczka',
+                  description: 'Ta witryna używa ciasteczek. Pozostając na stronie zgadzasz się na ich użycie. Aby dowiedzieć się więcej, w tym, jak zarządzać ciasteczkami, zajrzyj tutaj: https://mniejcukru.pl/ciasteczka.html',
+                },
+                en: {
+                  name: 'Strictly Necessary Cookies',
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu commodo est, nec gravida odio. Suspendisse scelerisque a ex nec semper.',
+                },
+                hu: {
+                  name: 'Szükséges sütik',
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu commodo est, nec gravida odio. Suspendisse scelerisque a ex nec semper.',
+                }
+              }
+            }
+          },
+          
+          various: {
+            needed: false,
+            wanted: false,
+            checked: false,
+            language: {
+              locale: {
+                pl: {
+                  name: 'Inne ciasteczka',
+                  description: 'Na ten moment wszystkie ciasteczka są wymagane.',
+                },
+                en: {
+                  name: 'Various Cookies',
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                },
+                hu: {
+                  name: 'Egyéb sütik',
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu commodo est, nec gravida odio. Suspendisse scelerisque a ex nec semper.',
+                }
+              }
+            }
+          }
+        },
+        
+        services: {
+          facebook: {
+            category: 'various',
+            type: 'dynamic-script', // dynamic-script, script-tag, wrapped, localcookie
+            search: 'facebook',
+            language: {
+              locale: {
+                en: {
+                  name: 'Facebook'
+                },
+                hu: {
+                  name: 'Facebook'
+                }
+              }
+            }
+          },
+          azalead: {
+            category: 'various',
+            type: 'script-tag',
+            search: 'azalead',
+            language: {
+              locale: {
+                en: {
+                  name: 'Azalead'
+                },
+                hu: {
+                  name: 'Azalead'
+                }
+              }
+            }
+          },
+          wrapped: {
+            category: 'various',
+            type: 'wrapped',
+            search: 'wrapped',
+            language: {
+              locale: {
+                en: {
+                  name: 'Wrapped'
+                },
+                hu: {
+                  name: 'Csomagolt süti'
+                }
+              }
+            }
+          },
+          localcookie: {
+            category: 'various',
+            type: 'localcookie',
+            search: 'localcookie',
+            language: {
+              locale: {
+                en: {
+                  name: 'Local cookie'
+                },
+                hu: {
+                  name: 'Helyi süti'
+                }
+              }
+            }
+          }
+        }
+      });
+    </script>
 
 </head>
 
